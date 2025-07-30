@@ -3,10 +3,7 @@ import React from 'react'
 
 async function Students() {
 
-  function revalidateSomething(){
-    "use server"
-    revalidateTag("faculteis");
-  }
+ 
 
   const dataStr = await fetch("https://62d6c51451e6e8f06f12bd5d.mockapi.io/faculties",
     {
@@ -19,7 +16,6 @@ async function Students() {
   return (
     <div>
       <br/>
-      <button onClick={revalidateSomething}>Refresh</button>
       <br/>
       <br/>
 
